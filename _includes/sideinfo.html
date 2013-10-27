@@ -1,0 +1,30 @@
+	<footer class="the-footer">
+		<div class="unit-foot">
+			<div class="unit-inner unit-foot-inner">
+				<div class="misc vcard">
+					<h5> The Team </h5>
+					<hr>
+					<ul>
+						<li> Jonathan Shamblen </li>
+						<li> Cody Waite </li>
+						<li> Zach Lee </li>
+						<li> Larry Hyunh </li>
+					</ul>
+					<h5> Recent Posts </h5>
+					<hr>
+					<ul>
+  						{% for post in site.posts limit: 5 %}
+    						<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+  						{% endfor %}
+					</ul>
+					<h5> Contact Us </h5>
+					<hr>
+					<ul>
+						<li <span class="fn email">project-altered-reality@gmail.com </span> </li>
+						<li class="github"><a href="http://github.com/{{ site.author.github }}/" rel="me">github.com/project-altered-reality</a></li>
+						<li class="twitter"><a href="http://twitter.com/{{ site.author.twitter }}/" rel="me">twitter.com/project-altered-reality</a></li>
+					</ul>
+				</div><!-- misc -->
+			</div><!-- unit-foot-inner -->
+		</div><!-- unit-foot -->
+	</footer>

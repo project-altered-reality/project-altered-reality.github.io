@@ -1,0 +1,11 @@
+name: "Project Altered Reality"
+description: "The Project Altered Reality Development Blog"
+
+url: "http://localhost:4000"
+
+paginate: 10
+
+permalink: pretty
+pygments: true
+
+exclude: ["README.md"]

@@ -1,0 +1,18 @@
+{% include header.html %}
+
+<div id="page" class="hentry">
+	{% include sidenav.html %}
+	<div class="body" role="main">
+		<div class="unit-body">
+			<div class="unit-inner unit-body-inner">
+				<h1> {{ page.title }} </h1>
+				<div class="entry-content">
+					{{ content }}
+				</div>
+			</div><!-- unit-inner -->
+		</div><!-- unit-body -->
+	</div><!-- body -->
+	{% include sideinfo.html %}
+</div><!-- page -->
+
+{% include footer.html %}
